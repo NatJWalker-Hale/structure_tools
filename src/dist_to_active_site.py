@@ -120,7 +120,7 @@ if __name__ == "__main__":
             # mod subs in place
         else:
             structure_distance_pocket(args.structure, pocket_res, subs)
-        print("pos_aln\tpos_par\tpar\tdesc\tsub\ttype\tpocket_res\tdist")
+        print("pos_aln\tpos_par\tpar\tdesc\tsub\ttype\tdist")
         for s in subs:
             print("\t".join([str(x) for x in s]))
     else:
