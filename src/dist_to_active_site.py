@@ -131,8 +131,10 @@ if __name__ == "__main__":
         else:
             d = structure_distance_pocket_all(args.structure, pocket_res)
         i = 1
-        print("\t".join(["pos", "dist"]))
+        struc_name = args.structure.split("_")[0]
+        print("\t".join(["ref", "pos", "dist"]))
         for distance in d:
-            print(f"{i}\t{distance}")
+            # 1-indexed
+            print(f"{struc_name}\t{i}\t{distance}")
             i += 1
 
