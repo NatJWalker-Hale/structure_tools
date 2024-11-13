@@ -14,8 +14,10 @@ def color_resi_conv_coin(session):
     for k, v in typeDict.items():
         if v == "CONV":
             cmd = f"color /A:{k} #D40000 target s"
-        else:
+        elif v == "COIN":
             cmd = f"color /A:{k} #0055D4 target s"
+        else:
+            cmd = f"color /A:{k} #696969 target s"
         run(session, cmd)
 
 
